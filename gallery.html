@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="css/lightgallery.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>Strona Portfolio</h1>
+        <h2>Dawid Dzięgielewski</h2>
+    </div>
+
+    <div class="topnav">
+        <a href="index.html">Strona główna</a>
+        <a href="projects.html">Projekty</a>
+        <a href="gallery.html">Galeria</a>
+        <a href="about.html">O mnie</a>
+    </div>
+    <div class="card">
+        <script src="js/lightgallery.min.js"></script>
+
+        <!-- lightgallery plugins -->
+        <script src="js/lg-thumbnail.min.js"></script>
+        <script src="js/lg-fullscreen.min.js"></script>
+
+        <div id="lightgallery">
+            <a href="img/background1.jpg"><img src="img/background1.jpg"></a>
+            <a href="img/ja.jpg"><img src="img/ja.jpg"></a>
+        </div>
+
+        <script>
+            lightGallery(document.getElementById('lightgallery'));
+        </script>
+    </div>
+
+<div class="footer">
+    <h2>Stopka</h2>
+</div>
+
+</body>
+</html>

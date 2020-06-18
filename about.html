@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="Style.css">
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/skill.bars.jquery.js"></script>
+</head>
+<body>
+
+<div class="header">
+    <h1>Strona Portfolio</h1>
+    <h2>Dawid Dzięgielewski</h2>
+</div>
+
+<div class="topnav">
+    <a href="index.html">Strona główna</a>
+    <a href="projects.html">Projekty</a>
+    <a href="gallery.html">Galeria</a>
+    <a href="about.html">O mnie</a>
+</div>
+
+<div class="row">
+    <div class="leftcolumn">
+        <div class="card">
+            <h1>Moje umiejętności</h1>
+            <h2>Strony internetowe</h2>
+                <div class="skillbar" data-percent="70">
+                    <span class="skillbar-title" style="background: #d35400;">HTML5</span>
+                    <p class="skillbar-bar" style="background: #e67e22;"></p>
+                    <span class="skill-bar-percent"></span>
+                </div>
+                <!-- End Skill Bar -->
+
+                <div class="skillbar" data-percent="60">
+                    <span class="skillbar-title" style="background: #2980b9;">CSS3</span>
+                    <p class="skillbar-bar" style="background: #3498db;"></p>
+                    <span class="skill-bar-percent"></span>
+                </div>
+                <!-- End Skill Bar -->
+
+                <div class="skillbar" data-percent="30">
+                    <span class="skillbar-title" style="background: #2c3e50;">jQuery</span>
+                    <p class="skillbar-bar" style="background: #2c3e50;"></p>
+                    <span class="skill-bar-percent"></span>
+                </div>
+                <!-- End Skill Bar -->
+
+                <div class="skillbar" data-percent="79">
+                    <span class="skillbar-title" style="background: #46465e;">PHP</span>
+                    <p class="skillbar-bar" style="background: #5a68a5;"></p>
+                    <span class="skill-bar-percent"></span>
+                </div>
+            <h2>Programowanie</h2>
+            <div class="skillbar" data-percent="99">
+                <span class="skillbar-title" style="background: #d35400;">C++</span>
+                <p class="skillbar-bar" style="background: #e67e22;"></p>
+                <span class="skill-bar-percent"></span>
+            </div>
+            <div class="skillbar" data-percent="80">
+                <span class="skillbar-title" style="background: #d35400;">Java</span>
+                <p class="skillbar-bar" style="background: #e67e22;"></p>
+                <span class="skill-bar-percent"></span>
+            </div>
+            <!-- End Skill Bar -->
+        </div>
+        <div class="card">
+            <h2>Projekt 2</h2>
+            <h5>Drugi projekt, Sep 2, 2017</h5>
+            <div class="fakeimg" style="height:200px;">Miejsce na obrazek</div>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        </div>
+    </div>
+    <div class="rightcolumn">
+        <div class="card">
+            <h2>O Mnie</h2>
+            <img src="img/ja.jpg" alt="Picture" class="selfimage">
+            <p>Dawid Dzięgielewski</p>
+            <p>Student 3 roku Mazowieckiej Uczelni Publicznej w Płocku </p>
+            <p>Kierunek informatyka</p>
+            <p>Specjalizacja Programowanie i bazy danych</p>
+        </div>
+
+        <div class="card">
+            <h3>Linki społecznościowe</h3>
+            <p>Link1</p>
+            <p>Link2</p>
+            <p>Link3</p>
+        </div>
+    </div>
+    <script>
+        $('.skillbar').skillBars({
+            // options here
+        });
+    </script>
+
+
+</div>
+
+<div class="footer">
+    <h2>Stopka</h2>
+</div>
+
+</body>
+</html>

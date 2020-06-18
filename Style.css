@@ -10,12 +10,27 @@
 {
     box-sizing: border-box;
 }
-
+html{
+    position:relative;
+    min-height: 100%;
+}
 body {
+    height: 100%;
     font-family: Arial;
     padding: 10px;
     color:#ececec;
     background: #333333;
+
+}
+img {
+    border: 1px solid #ddd; /* Gray border */
+    border-radius: 4px;  /* Rounded border */
+    padding: 5px; /* Some padding */
+    width: 150px; /* Set a small width */
+
+}
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(255, 140, 186, 0.9);
 }
 
 /* Header/Blog Title */
@@ -29,6 +44,7 @@ body {
     background-image: url('Img/Background1.jpg');
 }
 
+
 .header h1 {
     font-family: "Times New Roman";
     font-size: 50px;
@@ -37,6 +53,12 @@ body {
     font-family: Winterlady;
     font-size: 50px;
 }
+
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 /* Style the top navigation bar */
 .topnav {
@@ -92,6 +114,9 @@ body {
     padding: 20px;
     margin-top: 20px;
 }
+.card h1,h2,h3{
+    text-align: center;
+}
 
 /* Clear floats after the columns */
 .row:after {
@@ -99,15 +124,63 @@ body {
     display: table;
     clear: both;
 }
+.footer {
+     padding: 20px;
+     text-align: center;
+     background: #ddd;
+     margin-top: 20px;
+ }
+
 
 /* Footer */
-.footer {
-    padding: 20px;
-    text-align: center;
-    background: #ddd;
-    margin-top: 20px;
+
+.skillbar {
+    position: relative;
+    display: inline-block;
+    margin: 15px 0;
+    width: 100%;
+    background: #eee;
+    height: 35px;
+    border-radius: 3px;
+    width: 100%;
 }
 
+.skillbar-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #ffffff;
+    background: #6adcfa;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+    height: 35px;
+    line-height: 35px;
+}
+
+.skillbar-bar {
+    height: 35px;
+    width: 0px;
+    margin-top: 0;
+    background: #6adcfa;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+.skill-bar-percent {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 11px;
+    height: 35px;
+    line-height: 35px;
+    color: #ffffff;
+    color: rgba(0, 0, 0, 0.4);
+}
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
     .leftcolumn, .rightcolumn {
