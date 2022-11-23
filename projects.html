@@ -6,7 +6,7 @@
 <body>
 
 <div class="header">
-    <h1>Strona Portfolio</h1>
+    <h1>Portfolio</h1>
     <h2>Dawid Dzięgielewski</h2>
 </div>
 
@@ -19,21 +19,55 @@
 
 <div class="row">
         <div class="card">
-            <h2>Projekt 1</h2>
-            <h5>Pierwszy projekt, Dec 7, 2017</h5>
-            <div class="fakeimg" style="height:200px;">Miejsce na obrazek</div>
-            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <h2>Lion's Den </h2>
+            <h5>2D Hack'n Slash Game</h5>
+            <img src="Img/Screenshot_5.png" alt="Lion's Den"> 
+            <p>Podstawowym celem niniejszego projektu było stworzenie stosunkowo prostej gry wykorzystującej silnik graficzny 2D i oparty na izometrycznym widoku kamery w stylu klasycznych gier Hack&Slash. Został on zainicjowany w oparciu o kod silnika open source BoldTemple Engine, który stanowi hobbystyczny projekt opublikowany w jednym z publicznych repozytoriów GitHuba. Silnik ten został wybrany ze względu na jego niszowość, nietypową architekturę i konieczność dalszego rozwoju w toku realizacji projektu. Wybór innego, popularnego silnika takiego jak Unity czy Unreal Engine byłby znacznie prostszy, łatwiejszy w implementacji oraz szybszy w kontekście prac programistycznych, jednak już nie tak rozwijający. Tym samym silnik BoldTemple oferował znacznie większe wyzwanie przy jednoczesnych dużych możliwościach rozwoju, zarówno samego projektu jak i umiejętności programistycznych.</p>
+            <p>W trakcie prac projektowych zrealizowane zostały następujące funkcjonalności:</p>
+            <ul>
+                <li>tworzenie nowej instancji gry</li>
+                <li>wczytywanie już istniejących zapisów</li>
+                <li>możliwość modyfikacji ogólnych ustawień gry obejmujących rozdzielczość, poziom głośności i rozmiar okna</li>
+                <li>menu pomocy z informacjami na temat gry i opcjami sterowania</li>
+                <li>interfejs zawierający informacje na temat statusu postaci, który obejmuje takie informacje jak: zdrowie, mana oraz doświadczenie</li>
+                <li>okno ekwipunku postaci</li>
+                <li>system obsługi rozmieszczenia przedmiotów w ekwipunku</li>
+                <li>implementację mapy gry wraz z elementami otoczenia i warstwami</li>
+                <li>podstawowy system walki</li>
+                <li>animacje walki</li>
+                <li>system obsługujący przeciwników i ich zachowanie</li>
+                <li>elementy sztucznej inteligencji postaci niezależnych</li>
+                <li>generator przedmiotów</li>
+                <li>losowe generowanie właściwości przedmiotów</li>
+                <li>wdrożenie statystyki bazowej odpowiadającej za redukcję obrażeń</li>
+                <li>możliwość uzyskiwania dodatkowych właściwości przedmiotów</li>
+                <li>poziomy rzadkości</li>
+            </ul>
+            <p>W projekcie zostały wykorzystane:</p>
+            <ul>
+                <li>Biblioteka SDL - Biblioteka pozwalająca stworzyć silnik gry </li>
+                <li>BoldTempleGame Engine - Framework oparty na SDL służący jako silnik</li>
+                <li>DearImGui - Biblioteka do tworzenia interfejsu graficznego</li>
+                <li>RapidJson - Parser plików Json używany do wczytywania/zapisywania gry</li>
+                <li>Tileson - Parser plików Json używany do wczytywania map tworzonych przy pomocy programu Tiled </li>
+            </ul>
+
         </div>
         <div class="card">
-            <h2>Projekt 2</h2>
-            <h5>Drugi projekt, Sep 2, 2017</h5>
-            <div class="fakeimg" style="height:200px;">Miejsce na obrazek</div>
-            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <h2>Snake Multiplayer</h2>
+
+            <img src="Img/Obraz2.png" alt="Snake Multiplayer"> 
+            <p>Prosta gra Snake pozwalająca na grę dla dwóch graczy.</p>
+            <p>Celem gry jest zdobycie jak największej ilości punktów zjadając losowo pojawiające się jabłka. Gra z czasem staje się coraz trudniejsza ponieważ węże graczy rosną przez co jest coraz trudniej manewrować jednocześnie uważając na przeciwnika.</p>
+
+            <p>W projekcie zostały wykorzystane:</p>
+            <ul>
+                <li>PyGame - Biblioteka pozwalająca stworzyć silnik gry</li>
+                <li>PodSixNet - Biblioteka obsługująca sieć komputerową do przesyłania pakietów danych między aplikacjami klient-serwer </li>
+            </ul>
         </div>
 </div>
-<div class="footer">
-    <h2>Stopka</h2>
-</div>
+
 
 </body>
 </html>
